@@ -1,0 +1,164 @@
+body {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+  background-color: #351;
+  color: #fff;
+}
+
+header {
+  background-color: #2a2a1e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2e22;
+  padding: 0.5rem 1rem;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bars {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bars div {
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.menu-container:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2e2e22;
+  border: 1px solid #4d774e;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover,
+.dropdown li a.active {
+  background-color: #4d774e;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9fbc74;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.info {
+  font-size: 1rem;
+  color: #c2f59e;
+  white-space: nowrap;
+}
+
+main {
+  padding: 2.5rem;
+  background-color: #3f3f2d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+strong {
+  color: #9fbc74;
+}
+
+a {
+  color: #9fbc74;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #c2f59e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: #2e2e22;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #555;
+  text-align: left;
+}
+
+table th {
+  background-color: #4d774e;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #3f3f2d;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #2a2a1e;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
