@@ -162,3 +162,17 @@ footer {
   width: auto;
   display: block;
 }
+.main-image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.main-image-row img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000055;
+}
